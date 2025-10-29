@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+
+header {
+    background-color: #00b600;
+}
+
+h1{
+      font-family: "Sansita Swashed", system-ui;
+}
+
+h2{ 
+    font-family: "Sansita Swashed", system-ui;
+
+}
+.background{
+ background-image: url("./assets/background.png");
+ height: 80vh;
+ background-repeat: no-repeat;
+ color: #ffffff;
+ text-align: center;
+ background-position: center;
+ background-size: cover;
+ padding-top: 200px;
+}
+
