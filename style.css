@@ -1,23 +1,164 @@
-@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
-  background-color: #00b600;
+  background-color: #66bb6a;
+  height: 10vh;
+  color: #ffffff;
 }
 
-h1 {
-  font-family: "Sansita Swashed", system-ui;
+header h2 {
+  display: block;
+  display: inline;
+  display: inline-block;
+  width: 40%;
+  padding-left: 190px;
+  margin-top: 20px;
+  font-size: 2rem;
+  font-family: "Sansita Swashed", sans-serif;
 }
 
-h2 {
-  font-family: "Sansita Swashed", system-ui;
+header nav {
+  display: flex;
+  display: inline;
+  width: 40%;
+  display: inline-block;
+  text-align: end;
+}
+
+header nav a {
+  margin-left: 45px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 22px;
 }
 
 .background {
+  height: 60vh;
   background-image: url("./assets/background.png");
-  height: 80vh;
   background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
   text-align: center;
-  background-position: center;
-  background-size: cover;
-  padding-top: 200px;
+}
+
+.background h1 {
+  display: flex;
+  font-size: 65px;
+  padding-top: 110px;
+  font-family: "Sansita Swashed", sans-serif;
+  justify-content: center;
+  align-self: start;
+}
+
+.background p {
+  font-size: 30px;
+  width: 100%;
+  font-weight: 500;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.background button {
+  background-color: #66bb6a;
+  color: #ffffff;
+  border: none;
+  margin-top: 50px;
+  padding: 10px 30px;
+  border-radius: 70px;
+  font-size: 1.2rem;
+}
+
+.cards {
+  margin-top: 80px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
+  margin-left: 10px;
+}
+
+.card {
+  width: 26%;
+  height: 75vh;
+}
+
+.card img {
+  width: 90%;
+  height: 70%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f1f8e9;
+}
+
+.card h3 {
+  margin-top: 15px;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.card p {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.card button {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #66bb6a;
+  color: #ffffff;
+  border: none;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
+
+.form {
+  margin-top: 110px;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 1.1rem;
+  padding-bottom: 40px;
+  background-color: #E8F5E9;
+}
+
+.form h2 {
+  text-align: center;
+  font-family: "roboto";
+  font-size: 1.4rem;
+  padding-top: 90px;
+}
+
+.form p {
+  text-align: center;
+  font-family: "roboto";
+  margin-top: 30px;
+  font-size: 1.2rem;
+  height: 10vh;
+}
+
+div label {
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 20px;
+  align-items: flex-end;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #66BB6A;
+  padding-top: 10px;
+  text-align: center;
+  font-family: "roboto";
+  font-weight: 900;
+  height: 40px;
 }/*# sourceMappingURL=style.css.map */

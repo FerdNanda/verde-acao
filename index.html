@@ -1,32 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Verde Ação</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <header>
-        <h2>Verde Ação</h2>
-        <nav>
-            <a href="#">Atividades</a>
-            <a href="#">Cadastre-se</a>
-        </nav>
+      <h2>Verde Ação</h2>
+
+      <nav>
+        <a href="#">Atividades</a>
+        <a href="#">Cadastre-se</a>
+      </nav>
     </header>
 
     <main>
-
-        <section class="background">
+      <section class="background">
         <h1>Verde Ação</h1>
-        <p>Ser voluntario na verde e ação é plantar esperança e colher transformação. juntos, cuidamos do planeta e inspiramos mudanças reais</p>
-<button>quero ser voluntario</button>
-</section>
+        <p>
+          Ser voluntário na Verde Ação é plantar esperança e colher
+          transformação. Juntos, cuidamos do planeta e inspiramos mudanças
+          reais!
+        </p>
+        <button>Quero ser voluntuntário</button>
+      </section>
 
+      <section class="cards">
+        <article class="card">
+          <img src="./assets/girassol.jpg" alt="Imagem de girassol" />
+          <h3>Plantio de mudas</h3>
+          <p>Cada muda plantada ajuda a restaurar o meio ambiente</p>
+          <button>Ver mais</button>
+        </article>
+
+        <article class="card">
+          <img src="assets/crianças.jpg" alt="crianças com cartaz" />
+          <h3>Educação Ambiental</h3>
+          <p>Promove oficinas e rodas de conversas</p>
+          <button>Ver mais</button>
+        </article>
+
+        <article class="card">
+          <img src="./assets/maos.png" alt="mãos plantando" />
+          <h3>Cuidados</h3>
+          <p>Ajude a manter áreas preservadas</p>
+          <button>Ver mais</button>
+        </article>
+
+        <article class="card">
+          <img src="./assets/arvores.jpg" alt="imagem de arvores" />
+          <h3>Mapeamento</h3>
+          <p>Identifique áreas que precisam de mapeamento</p>
+          <button>Ver mais</button>
+        </article>
+      </section>
+
+      <section class="form">
+        <h2>Cadastre-se como voluntário</h2>
+        <p>
+          Faça parte das ações que transformam o mundo. Com pequenas atitudes,
+          voce pode gerar grandes impactos na natureza e na comunidade
+        </p>
+      
+
+        <form action="#">
+          <fieldset>
+            <legend>Preencha os campos abaixo</legend>
+
+            <div>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="example@email.com"
+              />
+            </div>
+            <div>
+              <label for="Data">Data de Nascimento:</label>
+              <input
+                type="date"
+                id="DatadeNascimento"
+                name="Data de Nascimento"
+                min="0"
+                max="120"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="Estado">Estado:</label>
+
+              <select name="Estado" id="Estado">
+                <option value="">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="atividade">Atividade</label>
+              <select name="atividade" id="atividade">
+                <option value="Selecione">Selecione</option>
+                <option value="Autônomo">Autônomo</option>
+                <option value="PJ">PJ</option>
+                <option value="Estudante">Estudante</option>
+                <option value="MEI">MEI</option>
+                <option value="Aposentado">Aposentado</option>
+                <option value="Outros">Outros</option>
+                
+              </select>
+            </div>
+            <div>
+              <input type="submit" value="Enviar" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <footer>
+        <p>Todos os Direitos Reservados</p>
+      </footer>
     </main>
-</body>
+  </body>
 </html>
